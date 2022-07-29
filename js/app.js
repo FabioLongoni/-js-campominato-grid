@@ -5,8 +5,10 @@ const gridContainer = document.querySelector('.container');
 
 const playButton = document.getElementById('play_button')
 
-playButton.addEventListener('click' function() {
-    
+playButton.addEventListener('click', function () { 
+    playButton.style.display = 'none';
+    gridContainer.style.display = 'block';
+    console.log(gridContainer);
 })
 
 
