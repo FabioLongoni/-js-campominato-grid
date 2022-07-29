@@ -3,6 +3,12 @@ let gridSize = 10;
 let cellNumber = gridSize ** 2;
 const gridContainer = document.querySelector('.container');
 
+const playButton = document.getElementById('play_button')
+
+playButton.addEventListener('click' function() {
+    
+})
+
 
 for ( let i = 0; i < cellNumber; i++) {
     const cell = getSquareElement();
@@ -13,7 +19,6 @@ for ( let i = 0; i < cellNumber; i++) {
 function getSquareElement() {
     const square = document.createElement('div');
     square.classList.add('square');
-    console.log(square);
 
     square.addEventListener('click',clickHover);
 
@@ -22,6 +27,6 @@ function getSquareElement() {
 
 function clickHover() {
     const square = this;
-    square.classList.add('click_hover');
+    square.classList.toggle('click_hover');
     console.log(square);
 }
