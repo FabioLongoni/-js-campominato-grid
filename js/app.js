@@ -14,5 +14,14 @@ function getSquareElement() {
     const square = document.createElement('div');
     square.classList.add('square');
     console.log(square);
+
+    square.addEventListener('click',clickHover);
+
     return square;
+}
+
+function clickHover() {
+    const square = this;
+    square.classList.add('click_hover');
+    console.log(square);
 }
