@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: darkmagenta;
+    background-color: aquamarine;
 }
 
 main {
@@ -28,9 +28,8 @@ main {
 
 .square {
     aspect-ratio: 1;
-    border: 2px solid white;
+    border: 1px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
 }
